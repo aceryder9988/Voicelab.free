@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EchoLab Free TTS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🎤 EchoLab Free</h1>
+    <button class="toggle" onclick="toggleDark()">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <textarea id="textInput" placeholder="Yahan Urdu, Hindi ya English text likho..."></textarea>
+
+    <div class="controls">
+      <label>Voice:</label>
+      <select id="voiceSelect"></select>
+
+      <label>Speed:</label>
+      <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+
+      <label>Pitch:</label>
+      <input type="range" id="pitch" min="0" max="2" value="1" step="0.1">
+    </div>
+
+    <div class="buttons">
+      <button id="speakBtn">🔊 Speak</button>
+      <button id="downloadBtn">⬇ Download WAV</button>
+      <button id="copyBtn">📋 Copy Text</button>
+    </div>
+  </main>
+</div>
+
+<script src="tts.js"></script>
+</body>
+</html>
